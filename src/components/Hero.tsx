@@ -7,6 +7,8 @@ const images = [
   '/images/hero/image3.jpeg',
   '/images/hero/image4.jpeg',
   '/images/hero/image5.jpeg',
+  '/images/hero/image6.jpeg',
+  '/images/hero/image7.jpeg',
 ];
 
 export function Hero() {
