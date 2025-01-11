@@ -38,10 +38,10 @@ export function Hero() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <div className="hidden sm:flex">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Join our upcoming symposium.{' '}
-                <a href="/events" className="whitespace-nowrap font-semibold text-indigo-600">
+                {/* Join our upcoming symposium.{' '} */}
+                {/* <a href="/events" className="whitespace-nowrap font-semibold text-indigo-600">
                   Learn more <span aria-hidden="true">&rarr;</span>
-                </a>
+                </a> */}
               </div>
             </div>
             <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
