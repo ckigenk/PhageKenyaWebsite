@@ -66,7 +66,7 @@ export function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Address</h3>
                 <p className="mt-1 text-gray-600">
-                  Institute of Primate Research<br />
+                  Kenya Institute of Primate Research<br />
                   Karen, Nairobi<br />
                   Kenya
                 </p>
