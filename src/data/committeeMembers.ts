@@ -235,7 +235,7 @@ export const committeeMembers: CommitteeMember[] = [
     institution: "USAMDR-A, Kenya/Kenya Medical Research Institute",
     imageUrl: "/images/committee/MartinGeorges.jpg",
     bio: "Martin Georges has more than 5 years’ experience working in various capacities in a microbiology laboratory. He is a trainer in isolation, characterization and sequencing of bacteriophages. He is a passionate and dedicated phage researcher who has participated in organizing a of number of training and networking bacteriophage related events including the 1 st Kenyan Phage Symposium. He aspires to make a significant contribution to the fight against antibiotic resistance by exploiting bacteriophage biology, bioinformatics and immunology.",
-    expertise: ["Marine Biology", "Aquaculture", "Phage Ecology"],
+    expertise: ["Bacteriophage", "Lab safety"],
     publications: [
       {
         title: "Genome sequences of five Klebsiella bacteriophages that belong to the genus Jiaodavirus",
