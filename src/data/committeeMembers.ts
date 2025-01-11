@@ -183,7 +183,7 @@ export const committeeMembers: CommitteeMember[] = [
     title: "",
     role: "Senior Research Scientist",
     institution: "Kenya Medical Research Institure/Walter Reed Army Institute of Research - Africa",
-    imageUrl: "/images/committee/ErickOdoyo.jpg",
+    imageUrl: "/images/committee/ErickOdoyo.jpeg",
     bio: "",
     expertise: ["", "", ""],
     publications: [
