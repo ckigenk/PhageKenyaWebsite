@@ -38,5 +38,45 @@ export const labLocations = [
     contact: "Dr. Josephine Kimani",
     email:"jkimani@jkuat.ac.ke",
     website: "http://www.jkuat.ac.ke"
+  },
+  {
+    id: 5,
+    name: "Biotechnology Research Institute-KALRO-Pharmacology Research Program",
+    institution: "KALRO",
+    coordinates: [-1.25931, 36.74850],
+    description: "Research on phages of veterinary importance for application for cattle, camel mastitis, and poultry.",
+    contact: "Dr. Paul Ngari",
+    email:"paul.ngari@kalro.org",
+    website: "http://www.jkuat.ac.ke"
+  },
+  {
+    id: 6,
+    name: "Veterinary Science Research Institute-KALRO-Virology Lab",
+    institution: "KALRO",
+    coordinates: [-1.25931, 36.74850],
+    description: "Characterizing the immunology-phage-host interaction.",
+    contact: "Dr. Irene Ogali",
+    email:"irene.ogali@kalro.org",
+    website: "https://www.kalro.org/institutes/veterinary-research-institute/"
+  },
+  {
+    id: 7,
+    name: "Technical University of Kenya",
+    institution: "TUK",
+    coordinates: [-1.29115, 36.82530],
+    description: "Characterization of Vibrio phages",
+    contact: "Dr. Grace Gitau",
+    email:"ggitau@tukenya.ac.ke",
+    website: "https://tukenya.ac.ke/"
+  },
+  {
+    id: 8,
+    name: "Phage Hunters Training and Research Program (PHTRP)",
+    institution: "PHTRP",
+    coordinates: [-1.29325, 36.82336],
+    description: "This team aims to inspire and empower the next generation of scientists in Africa and other developing countries to pursue phage research, addressing the critical need for novel therapeutics in the fight against antibiotic resistance.",
+    contact: "Ely Aboka",
+    email:"elyboka99@gmail.com",
+    website: "https://phagehunterstrainingandresearchprogram.odoo.com/"
   }
 ];
