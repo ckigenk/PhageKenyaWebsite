@@ -21,11 +21,11 @@ export function ProfileModal({ member, onClose }: ProfileModalProps) {
         <div className="p-6 overflow-y-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Left side: Fixed content */}
-            <div className="md:col-span-1 sticky top-4 mb-4 md:mb-0 flex justify-center">
+            <div className="md:col-span-1 sticky top-4 mb-4 md:mb-0">
               <img
                 src={member.imageUrl}
                 alt={member.name}
-                className="w-2/3 md:w-full rounded-lg" // Image is 2/3 width on small screens, full on larger screens
+                className="w-full rounded-lg"
               />
               <div className="mt-4">
                 <h3 className="font-semibold text-gray-900">Expertise</h3>
