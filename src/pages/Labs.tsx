@@ -43,9 +43,10 @@ export function Labs() {
           </p>
         </div>
 
+        {/* Two Column Layout for Larger Screens */}
         <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Map Section */}
-          <div className="md:col-span-2 sticky top-0" style={{ height: '600px' }}>
+          {/* Map Section (only visible on larger screens) */}
+          <div className="md:col-span-2 hidden md:block sticky top-0" style={{ height: '600px' }}>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" style={{ height: '100%' }}>
               <MapContainer
                 center={[-0.0236, 37.9062]}
@@ -80,12 +81,12 @@ export function Labs() {
                         </div>
                       </Popup>
                     </Marker>
-                    
+
                     {/* Highlight the marker with a circle on hover */}
                     {highlightedLabId === lab.id && (
                       <Circle
                         center={lab.coordinates}
-                        radius={100}  // Larger radius for the circle on hover
+                        radius={100} // Larger radius for the circle on hover
                         pathOptions={{
                           color: 'red',
                           fillColor: 'red',
@@ -101,7 +102,35 @@ export function Labs() {
 
           {/* Scrollable Lab Details */}
           <div className="space-y-4 overflow-y-auto max-h-[600px] md:col-span-1">
-            {labLocations.map((lab, index) => (
+            {labLocations.map((lab) => (
+              <div
+                key={lab.id}
+                className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
+                onMouseEnter={() => setHighlightedLabId(lab.id)} // Highlight on hover
+                onMouseLeave={() => setHighlightedLabId(null)} // Remove highlight when hover ends
+              >
+                <h3 className="font-bold text-lg text-gray-900">{lab.name}</h3>
+                <a href={lab.website} target="_blank" className="text-sm text-indigo-600">{lab.institution}</a>
+                <p className="mt-2 text-sm text-gray-600">{lab.description}</p>
+                <div className="mt-3 flex items-center justify-between">
+                  <span className="text-sm font-medium text-gray-500">{lab.contact}</span>
+                  <a
+                    href={`mailto:${lab.email}`}
+                    className="text-sm font-medium text-indigo-600 hover:text-indigo-800"
+                  >
+                    Contact →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* One Column Layout for Smaller Screens */}
+        <div className="md:hidden flex flex-col gap-8">
+          {/* Scrollable Lab Details on Mobile */}
+          <div className="space-y-4 overflow-y-auto max-h-[600px]">
+            {labLocations.map((lab) => (
               <div
                 key={lab.id}
                 className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
