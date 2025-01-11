@@ -79,7 +79,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">LinkedIn</h3>
-                <a href="https://www.linkedin.com/company/phagekenya" target="_blank" rel="noopener noreferrer" className="mt-1 block text-gray-600 hover:text-indigo-600">
+                <a href="https://www.linkedin.com/in/phage-kenya-consortium-386246257/" target="_blank" rel="noopener noreferrer" className="mt-1 block text-gray-600 hover:text-indigo-600">
                   PhageKenya
                 </a>
               </div>
