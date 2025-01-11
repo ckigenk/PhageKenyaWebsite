@@ -26,8 +26,8 @@ export function Labs() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 py-12 flex">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <Microscope className="h-8 w-8 text-indigo-600 mr-2" />
@@ -40,10 +40,10 @@ export function Labs() {
           </p>
         </div>
 
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="md:col-span-2">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden md:col-span-1 sticky top-0 mb-4 md:mb-0" style={{ height: '600px' }}>
+        <div className="grid md:grid-cols-3 gap-8 relative">
+          {/* Map Section */}
+          <div className="md:col-span-2 sticky top-0" style={{ height: '600px' }}>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden" style={{ height: '100%' }}>
               <MapContainer
                 center={[-0.0236, 37.9062]}
                 zoom={7}
@@ -81,7 +81,8 @@ export function Labs() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          {/* Scrollable Lab Details */}
+          <div className="space-y-4 overflow-y-auto max-h-[600px] md:col-span-1">
             {labLocations.map((lab) => (
               <div key={lab.id} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-lg text-gray-900">{lab.name}</h3>
