@@ -4,7 +4,7 @@ export const labLocations = [
     name: "Kenya Institute of Primate Research",
     institution: "KIPRE",
     coordinates: [-1.3317, 36.7275],
-    description: "Phage research facility focusing on isolation and characterization of bacteriophages against various pathogens.",
+    description: "Phage research focusing on isolation and characterization of bacteriophages against various pathogens.",
     contact: "Dr. Atunga Nyachieo",
     email:"anyachieo@primateresearch.org",
     website: "http://primateresearch.org"
