@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Linkedin, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Send, MessageCircle } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
+
+// Add WhatsApp to your component
+
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -11,7 +15,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a server
     console.log('Form submitted:', formData);
     // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -53,8 +56,8 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                <a href="tel:+254707882964" className="mt-1 block text-gray-600 hover:text-indigo-600">
-                  +254 707 882 964
+                <a href="tel:+254706286882" className="mt-1 block text-gray-600 hover:text-indigo-600">
+                  Call us
                 </a>
               </div>
             </div>
@@ -81,6 +84,24 @@ export function Contact() {
                 <h3 className="text-lg font-semibold text-gray-900">LinkedIn</h3>
                 <a href="https://www.linkedin.com/in/phage-kenya-consortium-386246257/" target="_blank" rel="noopener noreferrer" className="mt-1 block text-gray-600 hover:text-indigo-600">
                   PhageKenya
+                </a>
+              </div>
+            </div>
+
+            {/* WhatsApp */}
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-50">
+                <FaWhatsapp className="h-6 w-6 text-green-600" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">WhatsApp</h3>
+                <a
+                  href="https://wa.me/+254707882964?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Phage%20Kenya."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block text-gray-600 hover:text-green-600"
+                >
+                  Chat with us on WhatsApp
                 </a>
               </div>
             </div>
