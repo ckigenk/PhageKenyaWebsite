@@ -1,19 +1,22 @@
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import React, { useState, useEffect, useRef } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { labLocations } from '../data/labLocations';
 import { Microscope } from 'lucide-react';
 
-// Fix for default marker icon
+// Default Marker Icon (smaller by default)
 const customIcon = new Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41]
+  iconSize: [30, 45], // Default smaller size
+  iconAnchor: [15, 45],
 });
 
 export function Labs() {
+  const [highlightedLabId, setHighlightedLabId] = useState(null);
+  const markersRef = useRef([]);
+
   useEffect(() => {
     // Fix for CSS issues with Leaflet
     const link = document.createElement('link');
@@ -53,29 +56,44 @@ export function Labs() {
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {labLocations.map((lab) => (
-                  <Marker
-                    key={lab.id}
-                    position={lab.coordinates}
-                    icon={customIcon}
-                  >
-                    <Popup>
-                      <div className="p-2">
-                        <h3 className="font-bold text-lg">{lab.name}</h3>
-                        <p className="text-sm text-gray-600">{lab.institution}</p>
-                        <p className="mt-2 text-sm">{lab.description}</p>
-                        <p className="mt-2 text-sm font-semibold">Contact: {lab.contact}</p>
-                        <a
-                          href={lab.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-2 text-sm text-indigo-600 hover:text-indigo-800 block"
-                        >
-                          Visit Website →
-                        </a>
-                      </div>
-                    </Popup>
-                  </Marker>
+                {labLocations.map((lab, index) => (
+                  <React.Fragment key={lab.id}>
+                    <Marker
+                      position={lab.coordinates}
+                      icon={customIcon} // Default pin size
+                      ref={(el) => (markersRef.current[index] = el)}
+                    >
+                      <Popup>
+                        <div className="p-2">
+                          <h3 className="font-bold text-lg">{lab.name}</h3>
+                          <p className="text-sm text-gray-600">{lab.institution}</p>
+                          <p className="mt-2 text-sm">{lab.description}</p>
+                          <p className="mt-2 text-sm font-semibold">Contact: {lab.contact}</p>
+                          <a
+                            href={lab.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-2 text-sm text-indigo-600 hover:text-indigo-800 block"
+                          >
+                            Visit Website →
+                          </a>
+                        </div>
+                      </Popup>
+                    </Marker>
+                    
+                    {/* Highlight the marker with a circle on hover */}
+                    {highlightedLabId === lab.id && (
+                      <Circle
+                        center={lab.coordinates}
+                        radius={100}  // Larger radius for the circle on hover
+                        pathOptions={{
+                          color: 'red',
+                          fillColor: 'red',
+                          fillOpacity: 0.3
+                        }}
+                      />
+                    )}
+                  </React.Fragment>
                 ))}
               </MapContainer>
             </div>
@@ -83,8 +101,13 @@ export function Labs() {
 
           {/* Scrollable Lab Details */}
           <div className="space-y-4 overflow-y-auto max-h-[600px] md:col-span-1">
-            {labLocations.map((lab) => (
-              <div key={lab.id} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            {labLocations.map((lab, index) => (
+              <div
+                key={lab.id}
+                className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
+                onMouseEnter={() => setHighlightedLabId(lab.id)} // Highlight on hover
+                onMouseLeave={() => setHighlightedLabId(null)} // Remove highlight when hover ends
+              >
                 <h3 className="font-bold text-lg text-gray-900">{lab.name}</h3>
                 <a href={lab.website} target="_blank" className="text-sm text-indigo-600">{lab.institution}</a>
                 <p className="mt-2 text-sm text-gray-600">{lab.description}</p>
