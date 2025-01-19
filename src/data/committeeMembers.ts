@@ -2,6 +2,31 @@ import { CommitteeMember } from '../types/committee';
 
 export const committeeMembers: CommitteeMember[] = [
   {
+    id: 9,
+    name: "Ivy Mutai",
+    title: "",
+    role: "Team Lead PhageKenya, Phage Expert & Consultant",
+    institution: "Institute of Primate Research (IPR), Nairobi, Kenya.",
+    imageUrl: "/images/committee/IvyMutai.png",
+    bio: "Ms Ivy Mutai is a Research Fellow and Bacteriophage Specialist at the Institute of Primate Research (IPR), Nairobi, Kenya. She is also a Phage Expert & Consultant with the U.S. Army Medical Research Directorate-Africa (USAMRD-A). Her research area focuses on infectious diseases under one health umbrella (human, animal and environmental health). As a graduate student in 2017, Ivy developed passion for phages (which are viruses that infect and replicate inside a bacteria). This was towards finding a long-term solution to the rise in antimicrobial resistance. During this period, Ivy has been working with the support and supervision of the Director of Research, IPR, Dr. Atunga Nyachieo. Through the phage program, Ivy has successfully trained at least 200 undergraduate students from various higher learning institutions across Kenya with hands-on phage isolation skills and expertise while creating awareness on antimicrobial resistance. This training has so far yielded to 4 MSc students, 2 PhD students from Sub-Saharan Africa. The program has been focusing on isolation of lytic phages against multidrug resistant bacteria of medical relevance such as Acinetobacter baumannii, Enterobacter cloacae, Klebsiella pneumoniae, Pseudomonas aeruginosa etc. Additionally, the program is not limited to extend its scope to other fields such as Agriculture and Ecology. Ivy was among the participants in the 2 nd East Africa Phages for Global Health (PGH) that was held at Pwani University, Kilifi, Kenya (2018). Following the PGH hands-on training, she founded a weekly phage discussion forum called IPR phage hunters at their center with the aim of enriching phage enthusiasts on the current phage trends and their applicability. She has also participated and presented her phage research work in several workshops including the 1 st Kenyan Bacteriophage Symposium held in Nairobi, Kenya, (2022) and the World Phage Week held in Ibadan (2022). She is also the team lead of the Kenya Phage Researchers Group (PhageKenya) which aims at bringing together phage enthusiasts to collaborate, network and share more ideas in the phage field and multidisciplinary sectors. In addition, Ivy has won the Phage Recognition and Achievement award through the Evergreen State College, United States, and the Institute of Primate Research, (2018). This was based on her excellent work for mentorship through successful and continuous training phage participants in the Phage Lab Training Program at the Institute of Primate Research and other biomedical research institutions across Sub- Saharan Africa.",
+    expertise: ["Infectious diseases", "One-Health", "Bacteriophages"],
+    publications: [
+      {
+        title: "Evaluating The Effectiveness of a Non-Locally Developed Commercial Phage Cocktail on Kenyan Pseudomonas aeruginosa Isolates.",
+        journal: "Journal of Microbiology and Infectious Diseases",
+        year: 2023,
+        doi: "10.5799/jmid.1265378"
+      }
+    ],
+    socialLinks: {
+      twitter: "https://x.com/MutaiIvy",
+      linkedin: "https://www.linkedin.com/in/ivy-mutai-aa8546120/",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=buZqXO0AAAAJ",
+      email:"mutaiivy94@gmail.com",
+      researchGate:"https://www.researchgate.net/profile/Ivy-Mutai"
+    }
+  },
+  {
     id: 1,
     name: "Dr. Angela Makumi",
     title: "PhD",
@@ -80,10 +105,10 @@ export const committeeMembers: CommitteeMember[] = [
     id: 4,
     name: "Dr. Lillian Musila",
     title: "PhD",
-    role: "Principal Scientist",
+    role: "Director, MicroHub, Kericho and WRAIR - Research Director, W. Kenya",
     institution: "Antimicrobial resistance surveillance and research group, USAMDR-A, Kenya/Kenya Medical Research Institute",
     imageUrl: "/images/committee/LillianMusila.jpg",
-    bio: "Dr. Musila is a biomedical research scientist with a Ph.D. in Molecular Parasitology from the University of Pennsylvania, Philadelphia, PA, USA, and a B.Sc. in Microbiology from the University of Massachusetts, Amherst, MA, USA. She has decades of international research, academic and teaching experience in microbiology, parasitology, human genetics, cancer, virology, developmental and molecular biology. Dr. Musila has worked for the past fourteen years at the Kenya Medical Research Institute, Nairobi, Kenya, for the Walter Reed Project on infectious disease surveillance and research on viral and bacterial pathogens. As the head of the Antimicrobial resistance program she focusses on antimicrobial resistance surveillance of World Health Organization priority ESKAPE pathogens to track antibiotic resistance trends, define their distribution across the country and identify the genes responsible for antibiotic resistance and virulence. In tandem, her research group screens for phages that have potential to be used therapeutically against endemic strains of MDR ESKAPE pathogens and participates in the establishment of a Kenyan phage bank. She is devoted to providing innovative interventions and diagnostics to the challenges of infectious diseases and antimicrobial resistance",
+    bio: "Dr. Musila is a biomedical research scientist with a Ph.D. in Molecular Parasitology from the University of Pennsylvania, Philadelphia, PA, USA, and a B.Sc. in Microbiology from the University of Massachusetts, Amherst, MA, USA. She has decades of international research, academic and teaching experience in microbiology, parasitology, human genetics, cancer, virology, developmental and molecular biology. Dr. Musila has worked for the past seventeen years at WRAIR -Africa, Kenya/KEMRI on infectious disease surveillance and research on viral and bacterial pathogens. As the head of the Antimicrobial resistance program she focusses on antimicrobial resistance surveillance of World Health Organization priority ESKAPE pathogens to track antibiotic resistance trends, define their distribution across the country and identify the genes responsible for antibiotic resistance and virulence. In tandem, she leads a Bacteriophage program that screens for phages that have the potential to be used therapeutically against endemic strains of MDR ESKAPE pathogens and promotes the establishment of a Kenyan phage bank. She is devoted to providing innovative interventions and diagnostics to the challenges of infectious diseases and antimicrobial resistance.",
     expertise: ["Antimicrobial resistance", "Phage", "molecular biology", "virology"],
     publications: [
       {
@@ -91,6 +116,36 @@ export const committeeMembers: CommitteeMember[] = [
         journal: "Microbial Resource Announcement",
         year: 2024,
         doi: "https://doi.org/10.1128/mra.00684-24"
+      },
+      {
+        title: "Phage banks as potential tools to rapidly and cost-effectively manage antimicrobial resistance in the developing world.",
+        journal: "Current Opinion in Virology",
+        year: 2022,
+        doi: "https://doi.org/10.1016/j.coviro.2022.101208"
+      },
+      {
+        title: "Complete genome sequences of 12 lytic phages against multidrug-resistant Enterococcus faecalis.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.00687-24"
+      },
+      {
+        title: "Complete genome sequences of four lytic bacteriophages against multidrug-resistant Enterococcus faecium.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.00688-24"
+      },
+      {
+        title: "Genome sequences of five Klebsiella bacteriophages that belong to the genus Jiaodavirus.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.01056-24"
+      },
+      {
+        title: "Characterization and Anti-Biofilm Activity of Lytic Enterococcus Phage vB_Efs8_KEN04 against Clinical Isolates of Multidrug-Resistant Enterococcus faecalis in Kenya",
+        journal: "MDPI viruses",
+        year: 2024,
+        doi: "https://doi.org/10.3390/v16081275"
       }
     ],
     socialLinks: {
@@ -162,10 +217,28 @@ export const committeeMembers: CommitteeMember[] = [
     expertise: ["Bioinformatics", "Data Science", "Molecular Biology"],
     publications: [
       {
-        title: "Complete genome sequences of 12 lytic phages against multidrug-resistant Enterococcus faecalis",
+        title: "Complete genome sequences of three Pseudomonas aeruginosa jumbo bacteriophages discovered in Kenya",
         journal: "Microbial Resource Announcement",
         year: 2024,
+        doi: "https://doi.org/10.1128/mra.00684-24"
+      },
+      {
+        title: "Complete genome sequences of 12 lytic phages against multidrug-resistant Enterococcus faecalis.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
         doi: "https://doi.org/10.1128/mra.00687-24"
+      },
+      {
+        title: "Complete genome sequences of four lytic bacteriophages against multidrug-resistant Enterococcus faecium.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.00688-24"
+      },
+      {
+        title: "Characterization and Anti-Biofilm Activity of Lytic Enterococcus Phage vB_Efs8_KEN04 against Clinical Isolates of Multidrug-Resistant Enterococcus faecalis in Kenya",
+        journal: "MDPI viruses",
+        year: 2024,
+        doi: "https://doi.org/10.3390/v16081275"
       }
     ],
     socialLinks: {
@@ -192,26 +265,19 @@ export const committeeMembers: CommitteeMember[] = [
         journal: "MDPI viruses",
         year: 2024,
         doi: "https://doi.org/10.3390/v16081275"
-      }
-    ],
-    socialLinks: {
-      twitter: "https://x.com/clostridioides",
-      linkedin: "https://www.linkedin.com/in/erick-odoyo-74244570/",
-      googleScholar: "",
-      email:"e.odoyo@gmail.com",
-      researchGate:"https://www.researchgate.net/profile/Erick-Odoyo"
-    }
-  },
-  {
-    id: 9,
-    name: "Ivy Mutai",
-    title: "",
-    role: "Team Lead PhageKenya, Phage Expert & Consultant",
-    institution: "Institute of Primate Research (IPR), Nairobi, Kenya.",
-    imageUrl: "/images/committee/IvyMutai.png",
-    bio: "Ms Ivy Mutai is a Research Fellow and Bacteriophage Specialist at the Institute of Primate Research (IPR), Nairobi, Kenya. She is also a Phage Expert & Consultant with the U.S. Army Medical Research Directorate-Africa (USAMRD-A). Her research area focuses on infectious diseases under one health umbrella (human, animal and environmental health). As a graduate student in 2017, Ivy developed passion for phages (which are viruses that infect and replicate inside a bacteria). This was towards finding a long-term solution to the rise in antimicrobial resistance. During this period, Ivy has been working with the support and supervision of the Director of Research, IPR, Dr. Atunga Nyachieo. Through the phage program, Ivy has successfully trained at least 200 undergraduate students from various higher learning institutions across Kenya with hands-on phage isolation skills and expertise while creating awareness on antimicrobial resistance. This training has so far yielded to 4 MSc students, 2 PhD students from Sub-Saharan Africa. The program has been focusing on isolation of lytic phages against multidrug resistant bacteria of medical relevance such as Acinetobacter baumannii, Enterobacter cloacae, Klebsiella pneumoniae, Pseudomonas aeruginosa etc. Additionally, the program is not limited to extend its scope to other fields such as Agriculture and Ecology. Ivy was among the participants in the 2 nd East Africa Phages for Global Health (PGH) that was held at Pwani University, Kilifi, Kenya (2018). Following the PGH hands-on training, she founded a weekly phage discussion forum called IPR phage hunters at their center with the aim of enriching phage enthusiasts on the current phage trends and their applicability. She has also participated and presented her phage research work in several workshops including the 1 st Kenyan Bacteriophage Symposium held in Nairobi, Kenya, (2022) and the World Phage Week held in Ibadan (2022). She is also the team lead of the Kenya Phage Researchers Group (PhageKenya) which aims at bringing together phage enthusiasts to collaborate, network and share more ideas in the phage field and multidisciplinary sectors. In addition, Ivy has won the Phage Recognition and Achievement award through the Evergreen State College, United States, and the Institute of Primate Research, (2018). This was based on her excellent work for mentorship through successful and continuous training phage participants in the Phage Lab Training Program at the Institute of Primate Research and other biomedical research institutions across Sub- Saharan Africa.",
-    expertise: ["Infectious diseases", "One-Health", "Bacteriophages"],
-    publications: [
+      },
+      {
+        title: "Complete genome sequences of 12 lytic phages against multidrug-resistant Enterococcus faecalis.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.00687-24"
+      },
+      {
+        title: "Complete genome sequences of four lytic bacteriophages against multidrug-resistant Enterococcus faecium.",
+        journal: "Microbiology Resource Announcements",
+        year: 2024,
+        doi: "https://doi.org/10.1128/mra.00688-24"
+      },
       {
         title: "Evaluating The Effectiveness of a Non-Locally Developed Commercial Phage Cocktail on Kenyan Pseudomonas aeruginosa Isolates.",
         journal: "Journal of Microbiology and Infectious Diseases",
@@ -220,11 +286,11 @@ export const committeeMembers: CommitteeMember[] = [
       }
     ],
     socialLinks: {
-      twitter: "https://x.com/MutaiIvy",
-      linkedin: "https://www.linkedin.com/in/ivy-mutai-aa8546120/",
-      googleScholar: "https://scholar.google.com/citations?hl=en&user=buZqXO0AAAAJ",
-      email:"mutaiivy94@gmail.com",
-      researchGate:"https://www.researchgate.net/profile/Ivy-Mutai"
+      twitter: "https://x.com/clostridioides",
+      linkedin: "https://www.linkedin.com/in/erick-odoyo-74244570/",
+      googleScholar: "",
+      email:"e.odoyo@gmail.com",
+      researchGate:"https://www.researchgate.net/profile/Erick-Odoyo"
     }
   },
   {
@@ -249,6 +315,156 @@ export const committeeMembers: CommitteeMember[] = [
       linkedin: "https://www.linkedin.com/in/martin-o-georges/",
       googleScholar: "",
       email:"Martin.gmatata@gmail.com",
+      researchGate:""
+    }
+  },
+  {
+    id: 11,
+    name: "Prof. Alfred Anakalo Shitandi",
+    title: "",
+    role: "",
+    institution: "Kisii Univeristy",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"ashitandi@kisiiuniversity.ac.ke",
+      researchGate:""
+    }
+  },
+  {
+    id: 12,
+    name: "Dr. Omori Omwenga",
+    title: "",
+    role: "",
+    institution: "Kisii Univeristy",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"omorieric@kisiiuniversity.ac.ke",
+      researchGate:""
+    }
+  },
+  {
+    id: 13,
+    name: "Mr. Meshack Tweya",
+    title: "",
+    role: "",
+    institution: "Kisii Univeristy",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"meshacktweya2@gmail.com",
+      researchGate:""
+    }
+  },
+  {
+    id: 14,
+    name: "Mr. Nelson Gichuki",
+    title: "",
+    role: "",
+    institution: "Kisii Univeristy",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"nelson.wgichuki@gmail.com",
+      researchGate:""
+    }
+  },
+  {
+    id: 15,
+    name: "Ms. Auleria Apopo",
+    title: "",
+    role: "",
+    institution: "Central Veterinary Laboratories/State Department of Livestock and Jomo Kenyatta University of Agriculture and Technology",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"",
+      researchGate:""
+    }
+  },
+  {
+    id: 16,
+    name: "Dr. Juliet Khayeli",
+    title: "",
+    role: "",
+    institution: "Jomo Kenyatta University of Agriculture and Technology",
+    imageUrl: "/images/committee/",
+    bio: "",
+    expertise: [],
+    publications: [
+      {
+        title: "",
+        journal: "",
+        year: "",
+        doi: ""
+      }
+    ],
+    socialLinks: {
+      twitter: "",
+      linkedin: "",
+      googleScholar: "",
+      email:"",
       researchGate:""
     }
   }

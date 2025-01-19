@@ -5,9 +5,9 @@ import { Menu, X } from 'lucide-react';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Research Scientists', href: '/committee' },
+  { name: 'Scientists', href: '/committee' },
   { name: 'Publications', href: '/publications' },
-  { name: 'Phage Laboratories', href: '/labs' },
+  { name: 'Phage Labs', href: '/labs' },
   { name: 'Opportunities', href: '/opportunities' },
   { name: 'Contact', href: '/contact' }
 ];
@@ -24,7 +24,7 @@ export function Navbar() {
               <span className="text-2xl font-bold text-indigo-600">Phage Kenya</span>
             </Link>
           </div>
-          <div className="hidden md:flex md:items-center md:space-x-6">
+          <div className="hidden md:flex md:ml-auto md:space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
