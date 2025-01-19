@@ -7,6 +7,7 @@ import { Committee } from './pages/Committee';
 import { Publications } from './pages/Publications';
 import { Opportunities } from './pages/Opportunities';
 import { Labs } from './pages/Labs';
+import { ContactUs } from './pages/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/publications" element={<Publications />} />
           <Route path="/opportunities" element={<Opportunities />} />
           <Route path="/labs" element={<Labs />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>

@@ -5,10 +5,11 @@ import { Menu, X } from 'lucide-react';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Committee', href: '/committee' },
+  { name: 'Research Scientists', href: '/committee' },
   { name: 'Publications', href: '/publications' },
-  { name: 'Labs Map', href: '/labs' },
-  { name: 'Opportunities', href: '/opportunities' }
+  { name: 'Phage Laboratories', href: '/labs' },
+  { name: 'Opportunities', href: '/opportunities' },
+  { name: 'Contact', href: '/contact' }
 ];
 
 export function Navbar() {

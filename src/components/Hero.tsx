@@ -8,7 +8,6 @@ const images = [
   '/images/hero/image4.jpeg',
   '/images/hero/image5.jpeg',
   '/images/hero/image6.jpeg',
-  '/images/hero/image7.jpeg',
 ];
 
 export function Hero() {
@@ -48,8 +47,7 @@ export function Hero() {
               Advancing Phage Research in Kenya
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              A community of researchers dedicated to bacteriophage research, fostering collaboration
-              and innovation in microbiology across Kenya.
+              PhageKenya is a consortium of researchers that engage in phage research in Kenya. This consortium's main aim is to create a one-health community building repositories of phages to formulate biological products, highlight phage research, and advocate for their safe use in animal, food industries, and healthcare.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a
