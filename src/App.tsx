@@ -7,7 +7,7 @@ import { Committee } from './pages/Committee';
 import { Publications } from './pages/Publications';
 import { Opportunities } from './pages/Opportunities';
 import { Labs } from './pages/Labs';
-import { ContactUs } from './pages/Contact';
+import { ContactUs } from './pages/ContactUs';
 
 function App() {
   return (
